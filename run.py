@@ -14,7 +14,7 @@ def main():
     print("[INFO] Camera started. Press 'q' in the video window to exit.")
 
     start_time = time.time()
-    TIMEOUT_SECONDS = 30  
+    # TIMEOUT_SECONDS = 30  
 
     try:
         while True:
@@ -41,9 +41,9 @@ def main():
                 break
 
             
-            if time.time() - start_time > TIMEOUT_SECONDS:
-                print(f"[INFO] Auto-exiting after {TIMEOUT_SECONDS} seconds.")
-                break
+            # if time.time() - start_time > TIMEOUT_SECONDS:
+            #     print(f"[INFO] Auto-exiting after {TIMEOUT_SECONDS} seconds.")
+            #     break
 
     finally:
         cap.release()
